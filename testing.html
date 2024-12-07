@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML</title>
+</head>
+<body>
+  <h1>Image Selection Example</h1>
+  <!-- The target element -->
+  <img id="neoimg" src="example.jpg" alt="Example Image">
+
+  <!-- JavaScript placed at the end of the body -->
+  <script>
+    // Selecting the element with ID 'neoimg'
+    document.addEventListener('DOMContentLoaded', () => {
+      const neoimg = document.getElementById('neoimg');
+      
+      // Log the element to the console
+      if (neoimg) {
+        console.log("Element found:", neoimg);
+        // Change the border to confirm selection
+        neoimg.style.border = "2px solid red";
+      } else {
+        console.log("Element not found.");
+      }
+    });
+  </script>
+</body>
+</html>
